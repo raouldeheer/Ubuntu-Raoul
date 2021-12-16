@@ -26,6 +26,6 @@ jobs:
           generate_release_notes: true
           draft: true
           body: |
-            "Download url:"
-            "```https://github.com/raouldeheer/Ubuntu-Raoul/releases/latest/download/ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz```"
+            Download url:
+            ```https://github.com/raouldeheer/Ubuntu-Raoul/releases/latest/download/ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz```
           files: ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz
