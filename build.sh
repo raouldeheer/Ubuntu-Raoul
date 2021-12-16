@@ -4,8 +4,7 @@ file() {
     tar rvf ../base.tar $1
 }
 echo "Starting build"
-wget -O ubuntu-20.04-standard_20.04-1_amd64.tar.gz -q http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
-cp ubuntu-20.04-standard_20.04-1_amd64.tar.gz base.tar.gz
+wget -O base.tar.gz -q http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
 
 echo "Unzipping gz"
 gunzip base.tar.gz
