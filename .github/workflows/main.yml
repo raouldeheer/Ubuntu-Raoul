@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: |
           chmod +x build.sh
-          ./build.sh base/ubuntu-20.10-standard_20.10-1_amd64.tar.gz "ubuntu-20.10-raoul-${{ github.event.inputs.tag }}.tar.gz"
+          ./build.sh "ubuntu-20.10-raoul-${{ github.event.inputs.tag }}.tar.gz"
       - name: Release
         uses: softprops/action-gh-release@v1
         with:

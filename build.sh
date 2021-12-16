@@ -4,7 +4,8 @@ file() {
     tar rvf ../base.tar $1
 }
 echo "Starting build"
-cp $1 base.tar.gz
+wget -O ubuntu-20.04-standard_20.04-1_amd64.tar.gz -q --show-progress http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
+cp ubuntu-20.04-standard_20.04-1_amd64.tar.gz base.tar.gz
 
 echo "Unzipping gz"
 gunzip base.tar.gz
@@ -25,5 +26,5 @@ echo "Finished file edit"
 cd ..
 echo "Zipping gz"
 gzip base.tar
-mv base.tar.gz $2
-echo "Done: $2"
+mv base.tar.gz $1
+echo "Done: $1"
