@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Run first boot script
+apt update
+
+# Delete self
+rm /etc/init.d/startupUbuntuRaoul
+exit 0

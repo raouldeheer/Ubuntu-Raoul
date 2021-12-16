@@ -1,0 +1,28 @@
+name: Main
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag'     
+        required: true
+        default: '0.0.0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: |
+          chmod +x build.sh
+          ./build.sh base/ubuntu-20.10-standard_20.10-1_amd64.tar.gz "ubuntu-20.10-raoul-${{ github.event.inputs.tag }}.tar.gz"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: "v${{ github.event.inputs.tag }}"
+          name: "Version ${{ github.event.inputs.tag }}"
+          generate_release_notes: true
+          draft: true
+          files: ubuntu-20.10-raoul-${{ github.event.inputs.tag }}.tar.gz
