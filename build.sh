@@ -4,7 +4,7 @@ file() {
     tar rvf ../base.tar $1
 }
 echo "Starting build"
-wget -O ubuntu-20.04-standard_20.04-1_amd64.tar.gz -q --show-progress http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
+wget -O ubuntu-20.04-standard_20.04-1_amd64.tar.gz -q http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
 cp ubuntu-20.04-standard_20.04-1_amd64.tar.gz base.tar.gz
 
 echo "Unzipping gz"
@@ -14,7 +14,7 @@ echo "Starting file edit"
 cd files
 
 # Get latest ASD
-wget -O ./usr/bin/asd -q --show-progress https://github.com/raouldeheer/ASD/releases/latest/download/asd.sh
+wget -O ./usr/bin/asd -q https://github.com/raouldeheer/ASD/releases/latest/download/asd.sh
 chmod +x ./usr/bin/asd
 # FILES BEGIN
 file ./usr/bin/asd
