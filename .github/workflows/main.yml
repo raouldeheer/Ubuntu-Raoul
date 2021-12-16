@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkout LFS objects
-        run: git lfs checkout
+        run: git lfs fetch --all
       - name: Build
         run: |
           chmod +x build.sh
