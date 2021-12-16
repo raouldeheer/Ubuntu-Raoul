@@ -17,7 +17,7 @@ jobs:
       - name: Build
         run: |
           chmod +x build.sh
-          ./build.sh "ubuntu-20.10-raoul-${{ github.event.inputs.tag }}.tar.gz"
+          ./build.sh "ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz"
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
@@ -25,4 +25,4 @@ jobs:
           name: "Version ${{ github.event.inputs.tag }}"
           generate_release_notes: true
           draft: true
-          files: ubuntu-20.10-raoul-${{ github.event.inputs.tag }}.tar.gz
+          files: ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz
