@@ -1,0 +1,12 @@
+NAME="UbuntuRaoul"
+VERSION="20.04-1.0.2 LTS (Focal Fossa)"
+ID=ubunturaoul
+ID_LIKE=debian
+PRETTY_NAME="UbuntuRaoul 20.04-1.0.2 LTS"
+VERSION_ID="20.04-1.0.2"
+HOME_URL="https://github.com/raouldeheer/Ubuntu-Raoul#readme"
+SUPPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
+BUG_REPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
+PRIVACY_POLICY_URL="https://github.com/raouldeheer/Ubuntu-Raoul"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal

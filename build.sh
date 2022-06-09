@@ -18,6 +18,7 @@ chmod +x ./usr/bin/asd
 # FILES BEGIN
 file ./usr/bin/asd
 file ./etc/rc.local
+file ./etc/os-release
 file ./etc/init.d/startupUbuntuRaoul
 
 # FILES END
