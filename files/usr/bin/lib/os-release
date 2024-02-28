@@ -1,9 +1,9 @@
 NAME="UbuntuRaoul"
-VERSION="22.04-1.0.4 LTS (Jammy Jellyfish)"
+VERSION="22.04-1.1.1 LTS (Jammy Jellyfish)"
 ID=ubunturaoul
 ID_LIKE=debian
-PRETTY_NAME="UbuntuRaoul 22.04-1.0.4 LTS"
-VERSION_ID="22.04-1.0.4"
+PRETTY_NAME="UbuntuRaoul 22.04-1.1.1 LTS"
+VERSION_ID="22.04-1.1.1"
 HOME_URL="https://github.com/raouldeheer/Ubuntu-Raoul#readme"
 SUPPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
 BUG_REPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"

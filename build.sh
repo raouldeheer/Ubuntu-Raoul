@@ -18,8 +18,10 @@ chmod +x ./usr/bin/asd
 # FILES BEGIN
 file ./usr/bin/asd
 file ./etc/rc.local
-file ./etc/os-release
+file ./etc/lsb-release
+file ./usr/lib/os-release
 file ./etc/init.d/startupUbuntuRaoul
+file ./etc/apt/apt.conf.d/00aptproxy
 
 # FILES END
 echo "Finished file edit"
