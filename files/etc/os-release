@@ -1,12 +1,12 @@
 NAME="UbuntuRaoul"
-VERSION="20.04-1.0.4 LTS (Focal Fossa)"
+VERSION="22.04-1.0.4 LTS (Jammy Jellyfish)"
 ID=ubunturaoul
 ID_LIKE=debian
-PRETTY_NAME="UbuntuRaoul 20.04-1.0.4 LTS"
-VERSION_ID="20.04-1.0.4"
+PRETTY_NAME="UbuntuRaoul 22.04-1.0.4 LTS"
+VERSION_ID="22.04-1.0.4"
 HOME_URL="https://github.com/raouldeheer/Ubuntu-Raoul#readme"
 SUPPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
 BUG_REPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
 PRIVACY_POLICY_URL="https://github.com/raouldeheer/Ubuntu-Raoul"
-VERSION_CODENAME=focal
-UBUNTU_CODENAME=focal
+VERSION_CODENAME=jammy
+UBUNTU_CODENAME=jammy

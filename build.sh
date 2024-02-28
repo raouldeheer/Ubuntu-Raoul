@@ -4,10 +4,10 @@ file() {
     tar rvf ../base.tar $1
 }
 echo "Starting build"
-wget -O base.tar.gz -q http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
+wget -O base.tar.zst -q http://download.proxmox.com/images/system/ubuntu-22.04-standard_22.04-1_amd64.tar.zst # http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
 
 echo "Unzipping gz"
-gunzip base.tar.gz
+unzstd base.tar.zst
 
 echo "Starting file edit"
 cd files
@@ -25,6 +25,6 @@ file ./etc/init.d/startupUbuntuRaoul
 echo "Finished file edit"
 cd ..
 echo "Zipping gz"
-gzip base.tar
-mv base.tar.gz $1
+zstd base.tar
+mv base.tar.zst $1
 echo "Done: $1"

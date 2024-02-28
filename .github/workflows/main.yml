@@ -17,7 +17,7 @@ jobs:
       - name: Build
         run: |
           chmod +x build.sh
-          ./build.sh "ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz"
+          ./build.sh "ubuntu-22.04-raoul-${{ github.event.inputs.tag }}.tar.zst"
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
@@ -28,6 +28,6 @@ jobs:
           body: |
             Download url:
             ```
-            https://github.com/raouldeheer/Ubuntu-Raoul/releases/latest/download/ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz
+            https://github.com/raouldeheer/Ubuntu-Raoul/releases/latest/download/ubuntu-22.04-raoul-${{ github.event.inputs.tag }}.tar.zst
             ```
-          files: ubuntu-20.04-raoul-${{ github.event.inputs.tag }}.tar.gz
+          files: ubuntu-22.04-raoul-${{ github.event.inputs.tag }}.tar.zst
