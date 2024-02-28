@@ -7,7 +7,7 @@ echo "Starting build"
 wget -O base.tar.zst -q http://download.proxmox.com/images/system/ubuntu-22.04-standard_22.04-1_amd64.tar.zst # http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
 
 echo "Unzipping gz"
-unzstd base.tar.zst
+unzstd --rm base.tar.zst
 
 echo "Starting file edit"
 cd files
@@ -25,6 +25,6 @@ file ./etc/init.d/startupUbuntuRaoul
 echo "Finished file edit"
 cd ..
 echo "Zipping gz"
-zstd base.tar
+zstd -f base.tar
 mv base.tar.zst $1
 echo "Done: $1"
