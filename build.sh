@@ -5,7 +5,7 @@ file() {
     tar uvf ../base.tar $1
 }
 echo "Starting build"
-wget -O base.tar.zst -q http://download.proxmox.com/images/system/ubuntu-22.04-standard_22.04-1_amd64.tar.zst # http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
+wget -O base.tar.zst -q http://download.proxmox.com/images/system/ubuntu-24.04-standard_24.04-2_amd64.tar.zst # http://download.proxmox.com/images/system/ubuntu-22.04-standard_22.04-1_amd64.tar.zst # http://download.proxmox.com/images/system/ubuntu-20.04-standard_20.04-1_amd64.tar.gz
 
 echo "Unzipping gz"
 unzstd --rm base.tar.zst

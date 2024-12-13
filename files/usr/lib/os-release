@@ -1,12 +1,12 @@
 NAME="UbuntuRaoul"
-VERSION="22.04-1.1.3 LTS (Jammy Jellyfish)"
+VERSION="24.04-1.2.0 LTS (Noble Numbat)"
 ID=ubunturaoul
 ID_LIKE=debian
-PRETTY_NAME="UbuntuRaoul 22.04-1.1.3 LTS"
-VERSION_ID="22.04-1.1.3"
+PRETTY_NAME="UbuntuRaoul 24.04-1.2.0 LTS"
+VERSION_ID="24.04-1.2.0"
 HOME_URL="https://github.com/raouldeheer/Ubuntu-Raoul#readme"
 SUPPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
 BUG_REPORT_URL="https://github.com/raouldeheer/Ubuntu-Raoul/issues"
 PRIVACY_POLICY_URL="https://github.com/raouldeheer/Ubuntu-Raoul"
-VERSION_CODENAME=jammy
-UBUNTU_CODENAME=jammy
+VERSION_CODENAME=noble
+UBUNTU_CODENAME=noble
